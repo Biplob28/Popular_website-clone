@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background.jpg);
+    height: 100vh;
+    position: relative;
+    padding: 10px 8%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.navbar {
+    height: 15vh;
+    margin: 0 -29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    background: red;
+    color: white;
+    background-color: #e50914;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header-another {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    align-items: center;
+}
+
+.het {
+    text-align: center;
+}
+
+.het h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: white;
+    line-height: normal;
+}
+
+.het h4 {
+    font-weight: 550;
+    letter-spacing: 0.3px;
+    margin: 20px;
+    color: white;
+
+}
+
+.button-pt {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.het p {
+
+    margin: 15px;
+    line-height: normal;
+    color: white;
+}
+
+.button-pt input {
+
+    height: 49px;
+    width: 372px;
+    color: black;
+
+}
+
+.button-pt button {
+    cursor: pointer;
+    color: white;
+    background: #e50914;
+    height: 49px;
+    line-height: normal;
+    font-weight: 400;
+    border: none;
+    width: 134px;
+}
+
+main .suii {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-par {
+    font-size: x-large;
+    margin: 20px;
+
+}
+
+.main-par h1 {
+    font-weight: 800;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: white;
+    line-height: normal;
+
+}
+
+.main-par p {
+    font-weight: 500;
+    padding: 10px;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.suii2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hel-1 {
+    margin: 20px;
+}
+
+.hel-2 {
+    font-size: x-large;
+    margin: 20px;
+
+}
+
+.hel-2 h1 {
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: white;
+    line-height: normal;
+}
+
+.button-pt {
+    justify-content: center;
+}
+
+/* ---Java Script part--- */
+
+.javascript-part {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 12%;
+}
+
+.javascript-part h1 {
+    font-weight: 500;
+    font-size: 40px;
+
+}
+
+.letgo {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.letgo li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.letgo li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background: #303030;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2px;
+    position: relative;
+
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.letgo .descrip {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.letgo input[type="radio"]:checked+label+.descrip {
+
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.letgo input[type="radio"]:checked+label::after {
+
+    transform: rotate(135deg);
+}
+
+/* ----footer--- */
+.danger-last {
+
+    margin-top: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.second-danger-last {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.danger-last h5 {
+    display: block;
+    margin-left: 50px;
+    line-height: normal;
+    font-weight: 400;
+    /* width: 100%; */
+}
+
+.danger-last h6 {
+    margin-left: 50px;
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.last p {
+
+    padding: 10px;
+}
+
+.last-2 p {
+
+    padding: 10px;
+}
+
+.last-3 p {
+
+    padding: 10px;
+}
+
+.last-4 p {
+
+    padding: 10px;
+}
+
+.last p:hover {
+    color: #303030;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.last-2 p:hover {
+    color: #303030;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+
+.last-3 p:hover {
+    color: #303030;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.last-4 p:hover {
+    color: #303030;
+    transition: 1s;
+    text-decoration: underline;
+}
